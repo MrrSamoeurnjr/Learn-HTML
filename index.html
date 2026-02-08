@@ -3,34 +3,144 @@
 <head>
     <meta charset="utf-8">
     <title>Home | My Website</title>
+
+    <style>
+        body{
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f7;
+        }
+
+        /* Navigation Bar */
+        .nav{
+            background-color: #1a237e;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .nav a{
+            color: #ffffff;
+            margin: 0 18px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        .nav a:hover{
+            color: #ffca28;
+        }
+
+        /* Hero Section */
+        .hero{
+            text-align: center;
+            padding: 40px 20px;
+            background-color: white;
+        }
+
+        .hero h1{
+            color: #1a237e;
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .hero h2{
+            color: #555;
+            font-size: 22px;
+            font-weight: normal;
+        }
+
+        /* Main Content Card */
+        .content{
+            background-color: white;
+            width: 75%;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .content p{
+            font-size: 18px;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        /* Skills */
+        .skills{
+            margin-top: 25px;
+        }
+
+        .skills h3{
+            color: #1a237e;
+            margin-bottom: 15px;
+        }
+
+        .skills ul{
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .skills li{
+            background-color: #e8eaf6;
+            padding: 12px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            color: #1a237e;
+        }
+
+        /* Profile Image */
+        .profile-img{
+            display: block;
+            margin: 25px auto 40px;
+            width: 230px;
+            border-radius: 50%;
+            border: 5px solid #1a237e;
+        }
+    </style>
 </head>
+
 <body>
 
-<a href="index.html">Home</a>
-<a href="about.html">About Me</a>
-<a href="experience.html">Experience</a>
-<a href="my-friends.html">My Friends</a>
-<a href="contact.html">Contact</a>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="experience.html">Experience</a>
+        <a href="my-friends.html">My Friends</a>
+        <a href="contact.html">Contact</a>
+    </div>
 
-<h1>Hi 👋, I'm Samoeurn Art</h1>
-<h2>Welcome to My Personal Website</h2>
+    <div class="hero">
+        <h1>Hi 👋, I'm Samoeurn Art</h1>
+        <h2>Data Management Trainee | Beginner Web Developer</h2>
+    </div>
 
-<p>
-I am a <b>Data Management Trainee</b> and a beginner <i>Web Developer</i>.
-I enjoy learning technology and building simple websites.
-</p>
+    <div class="content">
+        <p>
+            I am a <b>Data Management Trainee</b> and a beginner <i>Web Developer</i>.
+            I enjoy learning technology and building simple, meaningful websites.
+        </p>
 
-<p>
-Currently, I am training at <b>ACLEDA Bank</b> and improving my skills in:
-</p>
+        <p>
+            Currently, I am training at <b>ACLEDA Bank</b> and improving my skills in:
+        </p>
 
-<ul>
-    <li>HTML</li>
-    <li>SQL</li>
-    <li>Data Management</li>
-</ul>
+        <div class="skills">
+            <h3>My Skills</h3>
+            <ul>
+                <li>HTML</li>
+                <li>SQL</li>
+                <li>Data Management</li>
+            </ul>
+        </div>
+    </div>
 
-<img src="me.jpg" width="400" alt="My Photo">
+    <img src="me.jpg" alt="My Photo" class="profile-img">
 
 </body>
 </html>
